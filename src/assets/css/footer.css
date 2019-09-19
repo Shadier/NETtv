@@ -1,0 +1,11 @@
+footer{
+    padding: var(--paddingTB) var(--paddingLR);
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+    footer h4{
+        line-height: 0px;
+        font-size: 12px;
+        font-weight: lighter;
+    }

@@ -1,0 +1,35 @@
+.movie, 
+.movie .content .title,
+.movie .content .summary{
+    display: block;
+}
+    .movie .cover,
+    .movie .content{
+        display: inline-block;
+    }
+
+
+.movie .content{
+    width: calc(100% - 130px);
+}
+
+.movie .cover{
+    margin-right: 10px;
+}
+
+.movie .content .status{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(200,0,0);
+}
+.status.ended{
+    color: white;
+    background-color: green !important;
+}
+
+.status.running{
+    color: white;
+    background-color: orange !important;
+}

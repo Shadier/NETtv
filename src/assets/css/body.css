@@ -1,2 +1,6 @@
-.body-container{
+.body-container div{
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    background-color: red;
 }

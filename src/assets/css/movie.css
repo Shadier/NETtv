@@ -1,14 +1,44 @@
-.movie, 
 .movie .content .title,
 .movie .content .summary{
     display: block;
 }
+.movie{
+    display: inline-block;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    position: relative;
+}
     .movie .cover,
     .movie .content{
         display: inline-block;
+        vertical-align: top;
+        position: relative;
     }
-
-
+.movie .content .title,
+.movie .content .release{
+    line-height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+.movie .content .summary p{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   line-height: 17px;        /* fallback */
+   max-height: calc(17px * 3);
+   margin: 0px;
+   margin-top: 10px;
+   display: none;
+}
+.movie .content .summary p:first-child {
+    display: block;
+}
 .movie .content{
     width: calc(100% - 130px);
 }
@@ -20,8 +50,9 @@
 .movie .content .status{
     display: inline-block;
     border-radius: 5px;
-    padding: 5px;
+    padding: 2px 10px;
     color: white;
+    margin-top: 5px;
     background-color: rgb(200,0,0);
 }
 .status.ended{
@@ -33,3 +64,32 @@
     color: white;
     background-color: orange !important;
 }
+
+
+.movie .btn-seemore{
+    border-radius: 5px;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    padding: 8px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
+}
+
+.movie .btn-seemore:hover{
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+}
+.movie .btn-seemore:active{
+    -webkit-box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
+}
+

@@ -2,5 +2,24 @@
     position: relative;
     display: inline-block;
     margin-left: auto;
-    background-color: red;
+    text-align: center;
 }
+
+.loading-space{
+    text-align: center;
+    min-height: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.loading-space p{
+    color: darkgray;
+}
+
+.aboutus{
+    text-align: justify;
+    padding: 45px 100px;
+}
+    .aboutus p{
+        line-height: 35px;
+        letter-spacing: 1.5px;
+    }

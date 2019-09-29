@@ -4,6 +4,22 @@
     --paddingLR: 32px;
     --paddingTB: 16px;
 }
+nav{
+    position: fixed;
+    z-index: 40000;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,1);
+}
+    nav ul li{
+        margin-left: 0px !important;
+        margin-right: 20px !important;
+    }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
 .header{
     position: relative;
     box-sizing: border-box;
@@ -13,6 +29,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -59,6 +76,9 @@
     text-align: center;
 }
 
+    .black img{
+        margin-top: 90px;
+    }
 
 
 /*NAV*/
@@ -102,15 +122,18 @@ nav{
     .container-characters img{
         vertical-align: top;
     }
+    .img-header-l{
+        margin-left: 20px;
+    }
     .img-header-m{
         position: absolute;
-        left: 120px;
+        left: 152px;
         top: -10px;
-        z-index: 100;
+        z-index: 20000
     }
     .img-header-r{
         margin-top: -20px;
-        margin-left: -20px;
+        margin-left: 5px;
         -webkit-transform: scaleX(-1);
         -moz-transform: scaleX(-1);
         transform: scaleX(-1);

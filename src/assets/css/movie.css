@@ -1,8 +1,10 @@
 .movie .content .title,
 .movie .content .summary{
     display: block;
+    text-align: left !important;
 }
 .movie{
+    text-align: left !important;
     display: inline-block;
     min-width: 400px;
     max-width: 400px;
@@ -14,12 +16,15 @@
 }
     .movie .cover,
     .movie .content{
+        text-align: left !important;
         display: inline-block;
         vertical-align: top;
         position: relative;
     }
 .movie .content .title,
 .movie .content .release{
+    
+    text-align: left !important;
     line-height: 20px;
     padding: 0px;
     margin: 0px;
@@ -48,6 +53,8 @@
 }
 
 .movie .content .status{
+    text-align: left !important;
+    align-items: left;
     display: inline-block;
     border-radius: 5px;
     padding: 2px 10px;
